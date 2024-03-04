@@ -1,0 +1,15 @@
+Alunos:
+Gabriel de Carvalho Vasconcelos
+Vinícius Velozo Valença
+
+01- Quais problemas podem ser observados nas interações do armazém com os produtores?
+
+Os principais problemas que podemos observar da interação entre os produtores com o armazém é ao preencher o armazém, o segundo produtor que normalmente chega atrasado nessa produção acaba superlotando o armazém.
+
+02 - O que pode ser feito para a resolução desses problemas?
+
+Podemos achar uma maneira de controlar a prioridade dos produtores. Antes de adicionar o que foi produzido no armazém, podemo segurar a adição deles e ver o total que seria adicionado e comparar com o que está presente no armazém, assim adicionando o necessário e reservando o que sobrou em um armazém temporário para ser adicionado posteriormente.
+
+03 - Quais métodos da classe Thread podem ser utilizados na resolução desses problemas (justifique)?
+
+Para resolver esse problema, podemos usar os métodos wait() e notify(). Usando o wait() para fazer as threads esperarem a produção da outra concluir e notify() para acordar as threads para fazer a checagem e adicionar no armazém, tanto para preenchê-lo quanto para espera ele ser esvaziado.
