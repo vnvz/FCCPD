@@ -12,15 +12,15 @@ Cada aluno deve informar:
 Além disso, cada aluno apenas receberá as mensagens.
 Já os servidores devem enviar mensagens da seguinte forma:
 
-    ● Envio de mensagens
+- Envio de mensagens
 O usuário deve informar o conteúdo da mensagem e o código do tópico; 
 
 Cada mensagem enviada é uma string apresentando o seguinte formato:
 [dd/MM/yyyy - HH:mm] nome_tópico : Body
 Onde:
-● dd/MM/yyyy - HH:mm : data e hora de envio da mensagem;
-● Nome_tópico : Nome do tópico
-● Body: conteúdo da mensagem.
+- dd/MM/yyyy - HH:mm : data e hora de envio da mensagem;
+- Nome_tópico : Nome do tópico
+- Body: conteúdo da mensagem.
 
 OBS.:
 ● Utilize Threads(Runnable) para as situações em que o aluno se inscrever nos dois

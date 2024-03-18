@@ -12,6 +12,7 @@ public class Topic {
 
     public void addStudent(Student student) {
         this.students.add(student);
+        student.subscribe(this.name);
     }
 
     public String getName() {
