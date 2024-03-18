@@ -1,0 +1,29 @@
+Uma escola quer criar um canal de avisos para os alunos.
+Essas mensagens devem ser enviadas como datagramas por meio de sockets Multicast.
+Considere a criação de dois tópicos principais onde os alunos indicam em qual deles querem se cadastrar, com as seguintes possibilidades:
+
+1. Avisos Gerais
+2. Atividades Extracurriculares
+3. Os dois tópicos
+Cada aluno deve informar:
+    ● A opção (1/2/3)
+    ● Nome de usuário
+
+Além disso, cada aluno apenas receberá as mensagens.
+Já os servidores devem enviar mensagens da seguinte forma:
+
+    ● Envio de mensagens
+O usuário deve informar o conteúdo da mensagem e o código do tópico; 
+
+Cada mensagem enviada é uma string apresentando o seguinte formato:
+[dd/MM/yyyy - HH:mm] nome_tópico : Body
+Onde:
+● dd/MM/yyyy - HH:mm : data e hora de envio da mensagem;
+● Nome_tópico : Nome do tópico
+● Body: conteúdo da mensagem.
+
+OBS.:
+● Utilize Threads(Runnable) para as situações em que o aluno se inscrever nos dois
+tópicos
+● Um determinado aluno deve receber mensagens apenas do(s) tópico(s) ao qual se
+inscreveu.
